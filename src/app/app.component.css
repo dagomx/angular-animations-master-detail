@@ -1,0 +1,19 @@
+.offer-row {
+  background-color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.detail-row {
+  background-color: red;
+  position: relative
+}
+
+.detail {
+  background-color: blue;
+  color: white;
+  position: relative;
+  z-index: 1;
+
+}

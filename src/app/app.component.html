@@ -1,0 +1,15 @@
+<ng-container *ngFor="let offer of offers">
+  <div fxLayout="column">
+    <div fxFlexLayout="row" class="offer-row">
+      <div fxFlex>{{ offer.name }}</div>
+      <div fxFlex="100px">
+        <button (click)="mostrarDetalle(offer)">
+          {{ offer.showDetails ? 'Ocultar detalle' : 'Mostrar detalle' }}
+        </button>
+      </div>
+    </div>
+    <div fxFlexLayout="row" class="detail-row" *ngIf="offer.showDetails" [@showAnimation]>
+      <div class="detail">{{ offer.details }}</div>
+    </div>
+  </div>
+</ng-container>
